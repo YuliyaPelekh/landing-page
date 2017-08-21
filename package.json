@@ -1,0 +1,22 @@
+{
+  "name": "echo-test",
+  "version": "1.0.0",
+  "description": "test landing page",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm install && gulp"
+  },
+  "author": "Yuliya Pelekh",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1"
+  },
+  "dependencies": {
+    "normalize-scss": "^7.0.0"
+  }
+}

@@ -1,0 +1,54 @@
+@import 'variables';
+
+.subscribe{
+	padding: 130px $field;
+	background-color: $beige;
+	text-align: center; 
+	color: $white;
+	/*parallax*/
+    background-image: url("../../img/parallax.jpg");
+    height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+	.subscribe-form{
+		padding-top: 50px;
+
+		.subscribe-form__field{
+			padding: 10px 20px;
+			outline: none;
+			border: none;
+		}
+
+		.subscribe-form__field_input{
+			min-width: 30%;
+		}
+
+		.subscribe-form__field_button{
+			background-color: $red;
+			color: $white;
+		}
+	}
+}
+
+ /* Turn off parallax scrolling for tablets and phones. */
+@media only screen and (max-width: 1024px) {
+    .subscribe {
+        background-attachment: scroll;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .subscribe {
+        padding: 50px $field;
+
+        .subscribe-form{
+		
+			.subscribe-form__field_button{
+				margin-top: 10px;
+			}
+		}
+    }
+}

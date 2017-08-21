@@ -1,0 +1,157 @@
+@import 'variables';
+
+.contacts{
+     padding: 100px 0 110px $field;
+
+	.header{
+	    width: 50%;
+
+	    .header__header{
+	    	font-size: 40px;
+	    	margin-bottom: 30px;
+	    }
+
+		.header__line{
+			height: 2px;
+			width: 125px;
+			margin-top: 30px;
+			background-color: $red;
+		}
+	}
+
+	.contact-form-wrapper{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-top: 50px;
+
+		.contact-form{
+			width: 50%;
+		}
+
+		.contact-info{
+			width: 40%;
+			background-color: $black;
+			padding-top: 100px;
+			padding-left: 5%;
+			color: $white;
+
+			.contact-info__text{
+				margin-top: 20px;
+			}
+		}
+
+		.contact-form-inputs{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			margin-bottom: 45px;
+		}
+
+		.contact-form__field{
+			padding: 20px 30px;
+			background-color: $input-color;
+			color: $black;
+			border: none;
+			border-radius: 5px;
+			outline: none;
+		}
+
+		.contact-form__field_input{
+			width: 48%;
+		}
+
+		.contact-form__field_textarea{
+			width: 100%;
+			resize: none;
+			margin-bottom: 45px;
+		}
+
+		.contact-form__button{
+			width: 100%;
+			padding: 20px 0;
+			border: none;
+			border-radius: 5px;
+			outline: none;
+			background-color: $red;
+			color: $white;
+		}
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.contacts{
+		padding: 100px $field;
+
+		.header{
+	    	width: 100%;
+
+	    	.header__header{
+	    		font-size: 30px;
+	    	}
+		}
+
+		.contact-form-wrapper{
+			flex-direction: column;
+
+			.contact-form{
+				width: 100%;
+			}
+
+			.contact-info{
+				width: 100%;
+				padding: 50px 10px;
+			}
+
+			.contact-form__button{
+				margin-bottom: 50px;
+			}
+		}
+	}
+}
+
+.footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 50px $field 35px;
+	width: 100%;
+	background-color: $black;
+	color: $white;
+
+
+	.footer-icons{
+	   width: 200px;
+	   display: flex;
+	   flex-direction: row;
+	   justify-content: space-between;
+	}
+
+	.footer_copyright{
+		color: $light-gray;
+		font-size: 16px;
+	}
+
+	.footer-icons__icon{
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+	}
+
+	.footer-icons__icon_twitter{
+		background: url(./../../img/icon.jpg) 50px 262px;
+	}
+
+	.footer-icons__icon_in{
+		background: url(./../../img/icon.jpg) 50px 208px;
+	}
+
+	.footer-icons__icon_google{
+		background: url(./../../img/icon.jpg) 105px 315px;
+	}
+
+	.footer-icons__icon_facebook{
+		background: url(./../../img/icon.jpg) 315px 315px;
+	}
+
+}
